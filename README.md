@@ -1,4 +1,4 @@
-# PyTorch Template for DL projects
+# Nanodroplet size tracking in BF microscopy
 
 <p align="center">
   <a href="#about">About</a> •
