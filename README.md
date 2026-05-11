@@ -12,22 +12,12 @@
 
 ## About
 
-This repository contains a template for [PyTorch](https://pytorch.org/)-based Deep Learning projects.
+This repository is for testing models for tracking nanodroplets in brightfield microscopy.
 
-The template utilizes different python-dev techniques to improve code readability. Configuration methods enhance reproducibility and experiments control.
-
-Repository is released as a part of [HSE DLA course](https://github.com/markovka17/dla), however, can easily be adopted for any DL-task.
 
 ## Examples
 
-> [!IMPORTANT]
-> The main branch leaves some of the code parts empty or fills them with dummy examples, showing just the base structure. The final users can add code required for their own tasks.
 
-You can find examples of this template completed for different tasks in other branches:
-
-- [Image classification](todo): simple classification problem on [MNIST](todo) and [CIFAR-10](https://www.cs.toronto.edu/~kriz/learning-features-2009-TR.pdf) datasets.
-
-- [ASR](todo): template for the automatic speech recognition (ASR) task. Some of the parts (for example, `collate_fn`) are missing for studying purposes of [HSE DLA course](https://github.com/markovka17/dla).
 
 ## Installation
 
@@ -81,7 +71,7 @@ Where `CONFIG_NAME` is a config from `src/configs` and `HYDRA_CONFIG_ARGUMENTS` 
 
 ## Useful Links:
 
-You may find the following liks useful:
+You may find the following links useful:
 
 - [Python Dev Tips](https://github.com/ebezzam/python-dev-tips): information about [pre-commits](https://pre-commit.com/), [Hydra](https://hydra.cc/docs/intro/), and other stuff for better python code development.
 
