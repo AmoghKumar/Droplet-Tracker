@@ -21,43 +21,38 @@ This repository is for testing models for tracking nanodroplets in brightfield m
 
 ## Installation
 
-Installation may depend on your task. The general steps are the following:
+Create/Install the environment like this:
 
-0. (Optional) Create and activate new environment using [`conda`](https://conda.io/projects/conda/en/latest/user-guide/getting-started.html) or `venv` ([`+pyenv`](https://github.com/pyenv/pyenv)).
+conda create -n sam2-env python=3.10 -y
+conda activate sam2-env
 
-   a. `conda` version:
+Install PyTorch first:
 
-   ```bash
-   # create env
-   conda create -n project_env python=PYTHON_VERSION
+CPU version
+pip install torch torchvision
+OR CUDA version (recommended if you have NVIDIA GPU)
 
-   # activate env
-   conda activate project_env
-   ```
+Example for CUDA 12.1:
 
-   b. `venv` (`+pyenv`) version:
+pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
 
-   ```bash
-   # create env
-   ~/.pyenv/versions/PYTHON_VERSION/bin/python3 -m venv project_env
+Then:
 
-   # alternatively, using default python version
-   python3 -m venv project_env
+pip install -r requirements.txt
 
-   # activate env
-   source project_env
-   ```
+You will also need the SAM2 checkpoints/configs separately:
 
-1. Install all required packages
+Download checkpoints from Meta’s SAM2 repo
+Place them in:
+checkpoints/
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+For example:
 
-2. Install `pre-commit`:
-   ```bash
-   pre-commit install
-   ```
+checkpoints/sam2.1_hiera_small.pt
+
+Also clone/download the SAM2 config folder structure:
+
+configs/sam2.1/sam2.1_hiera_s.yaml
 
 ## How To Use
 
